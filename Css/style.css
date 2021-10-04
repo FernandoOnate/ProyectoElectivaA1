@@ -1,0 +1,108 @@
+:root {
+    --dark: #000000;
+    --dark-x: #1E2126; 
+    --light: #ffffff;
+    --teal: #46b842;
+    --teal-x: #CAFEB2;
+    --blue-x: #1EA2F8;
+}
+body {
+    font-family: 'Spartan', 'sans-serif';
+    font-weight: 300;
+    color: var(--light);
+}
+input[type=password],input[type=text]{
+    border: none;
+    border-radius: 10px;
+    
+}
+input[type=password]::-webkit-input-placeholder,input[type=text]::-webkit-input-placeholder{
+    color: var(--dark);
+}
+input[type=password]:focus,input[type=text]:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px var(--blue-x);
+}
+.form-text{
+    color: var(--dark) !important;
+    font-weight: bold;
+}
+.text-light { 
+    color: var(--light) !important; 
+}
+.bg-dark { 
+    background: linear-gradient(to bottom right, var(--dark-x), var(--teal)) !important; 
+}
+
+.bg-dark-x { 
+    background-color: var(--dark-x); 
+}
+.bg-teal-x{ 
+    background-color: var(--teal-x);
+}
+
+.btn {
+    min-height: 3.125rem;
+    font-weight: 600;
+}
+
+.form-control {
+    min-height: 3.125rem;
+    line-height: initial;
+}
+.form-control:focus {
+    background-color: var(--teal-x);
+    outline: none;
+}
+
+.TiendaImg1 {
+    background-image: url('TiendaImg1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.TiendaImg2 {
+    background-image: url('TiendaImg2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+ul{
+	background-color: #3B3B3A;
+	position: fixed;
+	width: 98%;
+	margin: 10px;
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	border-radius: 9px;
+}
+ul h3{
+	display: block;
+	color: white;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+li {
+	  float: left;
+	/*display: inline;*/
+}
+li a{
+	display: block;
+	color: white;
+	padding: 18px 20px;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	/*background-color: #F6F5FF;	
+	border-radius: 20px;*/
+  text-decoration: none;
+}
+li a:hover{
+  color: black;
+  background-color: white;
+
+}
